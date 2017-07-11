@@ -59,3 +59,31 @@ circle.forEach(function(icon) {icon.style.backgroundColor = "black"})
   14#
 
    var profileInfo = document.querySelectorAll('.bio-info-value') profileInfo.forEach(field) {field.innerText = ""})
+
+   Part 2
+
+   1#
+
+   var remove = document.querySelector("#time-travel")
+   remove.parentElement.remove()
+
+   2#
+
+   var portfolio = document.querySelector(".portfolio-container")
+   var pikachu = document.querySelector("#right-image")
+   portfolio.appendChild(pikachu.cloneNode())
+
+   3#
+
+
+    for (var i = 10; i > 0; i--) {
+        portfolio.appendChild(pikachu.cloneNode())
+    };
+
+  4#
+
+  var listItem = document.createElement("li");
+  var leftSpan = document.createElement('span');
+  var lastUpdated = document.createTextNode('Page last updated on');
+  leftSpan.appendChild(lastUpdated);
+  listItem.appendChild(leftSpan)
